@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import ServiceCard from './Services/ServiceCard';
 import useTitle from '../../hooks/useTitle';
 import HomeSection2 from './HomeSection2/HomeSection2';
+import HomeSection3 from './HomeSection3/HomeSection3';
 
 
 
@@ -53,7 +54,15 @@ const Home = () => {
              ></HomeSection2>)
            }
         </div>
-      
+        <h1 className='flex justify-center text-2xl text-bold mt-16 mb-8 font-bold text-fuchsia-600'>Please Have a Look My Upcoming Services Below.</h1>
+       <div className='grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-8'>
+           {
+             services.map(service=><HomeSection3
+                key={service._id}
+                service={service}
+             ></HomeSection3>)
+           }
+        </div>
     </div> 
    
       
