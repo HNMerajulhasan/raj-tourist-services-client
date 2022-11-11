@@ -29,7 +29,7 @@ const AddServices = () => {
     description
  }
 
-    fetch('http://localhost:5000/Allservices', {
+    fetch('https://raj-tourist-services-server.vercel.app/Allservices', {
           method:'POST',
           headers: {
              'content-type': 'application/json'
