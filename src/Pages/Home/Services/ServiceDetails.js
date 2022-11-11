@@ -32,7 +32,7 @@ const ServiceDetails = () => {
          address
        }
 
-       fetch('http://localhost:5000/reviews', {
+       fetch('https://raj-tourist-services-server.vercel.app/reviews', {
           method:'POST',
           headers: {
              'content-type': 'application/json'

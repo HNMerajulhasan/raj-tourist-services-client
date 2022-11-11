@@ -13,7 +13,7 @@ const Home = () => {
  useTitle('Home');
 
  useEffect(()=>{
-    fetch('http://localhost:5000/services')
+    fetch('https://raj-tourist-services-server.vercel.app/services')
      .then(res=>res.json())
      .then(data=>setServices(data))
   },[])

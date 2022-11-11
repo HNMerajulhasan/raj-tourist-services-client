@@ -28,7 +28,7 @@ const router=createBrowserRouter([
          {
             path:'/services/:id',
             element:<ServiceDetails></ServiceDetails>,
-            loader:({params})=>fetch(`http://localhost:5000/Allservices/${params.id}`) 
+            loader:({params})=>fetch(`https://raj-tourist-services-server.vercel.app/Allservices/${params.id}`) 
          },
          {
             path:'/login',
@@ -45,7 +45,7 @@ const router=createBrowserRouter([
          {
             path:'/update/:id',
             element:<Update></Update>,
-            loader: ({params}) => fetch(`http://localhost:5000/reviews/${params.id}`)
+            loader: ({params}) => fetch(`https://raj-tourist-services-server.vercel.app/reviews/${params.id}`)
          },
          {
             path:'/addServices',
@@ -58,7 +58,7 @@ const router=createBrowserRouter([
          {
             path:'/services/:id',
             element:<AddServices></AddServices>,
-            loader:({params})=>fetch(`http://localhost:5000/Allservices/${params.id}`) 
+            loader:({params})=>fetch(`https://raj-tourist-services-server.vercel.app/Allservices/${params.id}`) 
          }
        ]
     }
