@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import useTitle from '../../hooks/useTitle';
-
+//Add service section
 const AddServices = () => {
    useTitle('AddServices'); 
    
@@ -74,15 +74,6 @@ const AddServices = () => {
                                
                             </form>
                         </div>
-                
-                     
-                
-             
-
-
-  
-
-
          </div>
         </div>
     );

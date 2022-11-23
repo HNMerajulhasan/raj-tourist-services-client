@@ -2,6 +2,7 @@ import React from 'react';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 import { Link } from 'react-router-dom';
 
+//Home component
 const HomeSection2 = ({service}) => {
     const{place_img,place_name,total_tourist,discount} = service; 
     return (
